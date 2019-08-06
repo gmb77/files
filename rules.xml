@@ -9,5 +9,6 @@
 		<ignoreVersion type="regex">.*[sS][pP].*</ignoreVersion>
 		<ignoreVersion type="regex">.*[pP][rR].*</ignoreVersion>
 		<ignoreVersion type="regex">.*-[bB].*</ignoreVersion>
+		<ignoreVersion type="regex">2.0-EDR2</ignoreVersion>
 	</ignoreVersions>
 </ruleset>
