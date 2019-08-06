@@ -4,6 +4,7 @@
 	<ignoreVersions>
 		<ignoreVersion type="regex">.*[aA][lL][pP][hH][aA].*</ignoreVersion>
   		<ignoreVersion type="regex">.*[bB][eE][tT][aA].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[pP][fF][dD].*</ignoreVersion>
 		<ignoreVersion type="regex">.*[sS][pP].*</ignoreVersion>
 		<ignoreVersion type="regex">.*[pP][rR].*</ignoreVersion>
 		<ignoreVersion type="regex">.*-[bB].*</ignoreVersion>
