@@ -1,0 +1,20 @@
+<ruleset comparisonMethod="maven"
+	xmlns="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0 http://mojohaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
+	<ignoreVersions>
+		<ignoreVersion type="regex">.*[aA]lpha.*</ignoreVersion>
+		<ignoreVersion type="regex">.*[bB]eta.*</ignoreVersion>
+		<ignoreVersion type="regex">.*[rR][cC].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[eE][aA].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[sS][pP].*</ignoreVersion>
+	</ignoreVersions>
+	<!--rules>
+		<rule groupId="com.mycompany.maven" artifactId="old-maven-plugin" comparisonMethod="maven">
+			<ignoreVersions>
+				<ignoreVersion type="regex">.*-RELEASE</ignoreVersion>
+				<ignoreVersion>2.1.0</ignoreVersion>
+			</ignoreVersions>
+		</rule>
+	</rules-->
+</ruleset>
