@@ -3,20 +3,20 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0 http://mojohaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
 	<ignoreVersions>
-		<ignoreVersion type="regex">.*[Aa]lpha.*</ignoreVersion>
-		<ignoreVersion type="regex">.*[Bb]eta.*</ignoreVersion>
-		<ignoreVersion type="regex">.*[Rr][Cc].*</ignoreVersion>
-		<ignoreVersion type="regex">.*[Ee][Aa].*</ignoreVersion>
-		<!--ignoreVersion type="regex">.*[Ss][Pp].*</ignoreVersion>
-		<ignoreVersion type="regex">.*[Pp][Rr].*</ignoreVersion-->
-		<ignoreVersion type="regex">.*-[Bb].*</ignoreVersion>
+		<ignoreVersion type="regex">^.*[Aa]lpha.*$</ignoreVersion>
+		<ignoreVersion type="regex">^.*[Bb]eta.*$</ignoreVersion>
+		<ignoreVersion type="regex">^.*[Rr][Cc].*$</ignoreVersion>
+		<ignoreVersion type="regex">^.*[Ee][Aa].*$</ignoreVersion>
+		<!--ignoreVersion type="regex">^.*[Ss][Pp].*$</ignoreVersion-->
+		<ignoreVersion type="regex">^.*[Pp][Rr].*$</ignoreVersion>
+		<ignoreVersion type="regex">^.*-[Bb].*$</ignoreVersion>
 	</ignoreVersions>
-	<!--rules>
-		<rule groupId="com.mycompany.maven" artifactId="old-maven-plugin" comparisonMethod="maven">
+	<rules>
+		<rule groupId="javax.enterprise" artifactId="cdi-api" comparisonMethod="maven">
 			<ignoreVersions>
-				<ignoreVersion type="regex">.*-RELEASE</ignoreVersion>
-				<ignoreVersion>2.1.0</ignoreVersion>
+				<ignoreVersion type="regex">^.*\w.*$</ignoreVersion>
+				<!--ignoreVersion>2.1.0</ignoreVersion-->
 			</ignoreVersions>
 		</rule>
-	</rules-->
+	</rules>
 </ruleset>
