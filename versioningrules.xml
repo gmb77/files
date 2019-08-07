@@ -7,8 +7,8 @@
 		<ignoreVersion type="regex">.*[Bb]eta.*</ignoreVersion>
 		<ignoreVersion type="regex">.*[Rr][Cc].*</ignoreVersion>
 		<ignoreVersion type="regex">.*[Ee][Aa].*</ignoreVersion>
-		<ignoreVersion type="regex">.*[Ss][Pp].*</ignoreVersion>
-		<ignoreVersion type="regex">.*[Pp][Rr].*</ignoreVersion>
+		<!--ignoreVersion type="regex">.*[Ss][Pp].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[Pp][Rr].*</ignoreVersion-->
 		<ignoreVersion type="regex">.*-[Bb].*</ignoreVersion>
 	</ignoreVersions>
 	<!--rules>
