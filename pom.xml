@@ -77,7 +77,8 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
 				<configuration>
-					<rulesUri>file://${project.basedir}/ruleset.xml</rulesUri>
+					<!--rulesUri>file://${project.basedir}/versioningrules.xml</rulesUri-->
+					<rulesUri>https://raw.githubusercontent.com/gmb77/files/master/versioningrules.xml</rulesUri>
 				</configuration>
 			</plugin>
 		</plugins>
