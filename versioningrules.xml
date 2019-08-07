@@ -14,7 +14,7 @@
 	<rules>
 		<rule groupId="javax.enterprise" artifactId="cdi-api" comparisonMethod="maven">
 			<ignoreVersions>
-				<ignoreVersion type="regex">^.*\w.*$</ignoreVersion>
+				<ignoreVersion type="regex">^.*[^\d\.].*$</ignoreVersion>
 				<!--ignoreVersion>2.1.0</ignoreVersion-->
 			</ignoreVersions>
 		</rule>
