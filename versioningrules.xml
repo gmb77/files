@@ -3,11 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0 http://mojohaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
 	<ignoreVersions>
-		<ignoreVersion type="regex">.*[aA]lpha.*</ignoreVersion>
-		<ignoreVersion type="regex">.*[bB]eta.*</ignoreVersion>
-		<ignoreVersion type="regex">.*[rR][cC].*</ignoreVersion>
-		<ignoreVersion type="regex">.*[eE][aA].*</ignoreVersion>
-		<ignoreVersion type="regex">.*[sS][pP].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[Aa]lpha.*</ignoreVersion>
+		<ignoreVersion type="regex">.*[Bb]eta.*</ignoreVersion>
+		<ignoreVersion type="regex">.*[Rr][Cc].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[Ee][Aa].*</ignoreVersion>
+		<ignoreVersion type="regex">.*[Ss][Pp].*</ignoreVersion>
 	</ignoreVersions>
 	<!--rules>
 		<rule groupId="com.mycompany.maven" artifactId="old-maven-plugin" comparisonMethod="maven">
@@ -18,103 +18,3 @@
 		</rule>
 	</rules-->
 </ruleset>
-
-
-
-		<!--plugins>
-			<plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>3.1.1</version>
-				<executions>
-					<execution>
-						<id>copy-dependencies</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>copy-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/libs</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.0.2</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>libs/</classpathPrefix>
-							<mainClass>${project.groupId}.App</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.1.1</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<archive>
-								<manifest>
-									<mainClass>${project.groupId}.App</mainClass>
-								</manifest>
-							</archive>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.1</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<shadedArtifactAttached>true</shadedArtifactAttached>
-							<transformers>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>${project.groupId}.App</mainClass>
-								</transformer>
-							</transformers>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>3.1.0</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.1.1</version>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins-->
